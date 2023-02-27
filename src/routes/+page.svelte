@@ -7,12 +7,12 @@
 	import '@ui5/webcomponents/dist/Label';
 	import '@ui5/webcomponents/dist/Button';
 
-	import { onMount } from 'svelte';
+/* 	import { onMount } from 'svelte';
 
 	onMount(() => {
 		console.log('the component has mounted');
-		setTheme('sap_horizon_dark');
-	});
+		//setTheme('sap_horizon_dark');
+	}); */
 </script>
 
 <svelte:head>
@@ -20,15 +20,14 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div>
-	<ui5-page>
-		<ui5-bar design="Header" slot="header">
-			<ui5-label>Header Title</ui5-label>
-		</ui5-bar>
-		<div style="background-color: blue;">
-			<section>
-				<p>Test Test test</p>
-			</section>
-		</div>
-	</ui5-page>
-</div>
+<ui5-page>
+	<ui5-bar design="Header" slot="header">
+		<ui5-label>Header Title</ui5-label>
+	</ui5-bar>
+
+	<div>
+		<section>
+			<ui5-button icon="employee">Add</ui5-button>
+		</section>
+	</div>
+</ui5-page>
