@@ -10,7 +10,9 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.45.0
   '@typescript-eslint/parser': ^5.45.0
   '@ui5/webcomponents': ^1.10.4
-  '@ui5/webcomponents-fiori': ^1.10.4
+  '@ui5/webcomponents-base': ^1.10.5
+  '@ui5/webcomponents-fiori': ^1.10.5
+  '@ui5/webcomponents-icons': ^1.10.5
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
@@ -25,7 +27,9 @@ specifiers:
 
 dependencies:
   '@ui5/webcomponents': 1.10.4
-  '@ui5/webcomponents-fiori': 1.10.4
+  '@ui5/webcomponents-base': 1.10.5
+  '@ui5/webcomponents-fiori': 1.10.5
+  '@ui5/webcomponents-icons': 1.10.5
 
 devDependencies:
   '@fontsource/fira-mono': 4.5.10
@@ -602,13 +606,19 @@ packages:
       lit-html: 2.6.1
     dev: false
 
-  /@ui5/webcomponents-fiori/1.10.4:
-    resolution: {integrity: sha512-bPlNS8JrBZpbqfX7aC2lAYp94r38bhR1wlQ2jCQkgRbrFO+FLADpOscQqL90XPFxO+EDki549ULw/MVAuL6YSQ==}
+  /@ui5/webcomponents-base/1.10.5:
+    resolution: {integrity: sha512-aygrcefDTEezwj/wb3KO4VhM6g7Lv16L6O5p244piIOEdWKXEu1isZ0KsTCipfij462Z3bY4ELYZ6nyaJoKddg==}
     dependencies:
-      '@ui5/webcomponents': 1.10.4
-      '@ui5/webcomponents-base': 1.10.4
-      '@ui5/webcomponents-icons': 1.10.4
-      '@ui5/webcomponents-theming': 1.10.4
+      lit-html: 2.6.1
+    dev: false
+
+  /@ui5/webcomponents-fiori/1.10.5:
+    resolution: {integrity: sha512-CtlC0SCBnXy935qNj5Ihl96Zv12hM0oFegoP0vi3akGU1ujEBYnkOdsQZ7qu08VHN8kbFqGDQQvnc6qu4zceRg==}
+    dependencies:
+      '@ui5/webcomponents': 1.10.5
+      '@ui5/webcomponents-base': 1.10.5
+      '@ui5/webcomponents-icons': 1.10.5
+      '@ui5/webcomponents-theming': 1.10.5
       '@zxing/library': 0.17.1
     dev: false
 
@@ -618,11 +628,24 @@ packages:
       '@ui5/webcomponents-base': 1.10.4
     dev: false
 
+  /@ui5/webcomponents-icons/1.10.5:
+    resolution: {integrity: sha512-udGtFzOVFt6qMFexpIjCylQ+T3m1Yfge0bbvCAwrPhP5jBBhTeOOimbPi1zFa5U0mW8xNYNnnR+04NTBmlrgjQ==}
+    dependencies:
+      '@ui5/webcomponents-base': 1.10.5
+    dev: false
+
   /@ui5/webcomponents-localization/1.10.4:
     resolution: {integrity: sha512-CHcaHIL2YdmEi3AMuaQCPQcwvZDpFvyhz1xb7XyrbpGbIX8y7ZDLrafORB95KDxwdZDuTAXacpGyj053dfKcWw==}
     dependencies:
       '@types/openui5': 1.111.0
       '@ui5/webcomponents-base': 1.10.4
+    dev: false
+
+  /@ui5/webcomponents-localization/1.10.5:
+    resolution: {integrity: sha512-zfw3IUjJ/YyX3NtIjUSHqV96d7X0M/buUFfkOhNd8dvRVr3Fg7WZMpI3WMQsxP/a4/2AjskD1BdyrnIWawGQxw==}
+    dependencies:
+      '@types/openui5': 1.111.0
+      '@ui5/webcomponents-base': 1.10.5
     dev: false
 
   /@ui5/webcomponents-theming/1.10.4:
@@ -632,6 +655,13 @@ packages:
       '@ui5/webcomponents-base': 1.10.4
     dev: false
 
+  /@ui5/webcomponents-theming/1.10.5:
+    resolution: {integrity: sha512-yH+A6YJTgO4HvUe+83JL6sMssb5eLBtxWTK500EfDaUS1655OyOFXC8sN2yKqFBVdyPjKQXzo2w3C/WC4trnyA==}
+    dependencies:
+      '@sap-theming/theming-base-content': 11.1.48
+      '@ui5/webcomponents-base': 1.10.5
+    dev: false
+
   /@ui5/webcomponents/1.10.4:
     resolution: {integrity: sha512-5TpmYMbA8OThBX0e15fkWxq7SLo1DuwldfOeboTyyqlnxiyaJTCrBFoS8ycnC9x9EZVUeXRUBQJFo7VkpdWocg==}
     dependencies:
@@ -639,6 +669,15 @@ packages:
       '@ui5/webcomponents-icons': 1.10.4
       '@ui5/webcomponents-localization': 1.10.4
       '@ui5/webcomponents-theming': 1.10.4
+    dev: false
+
+  /@ui5/webcomponents/1.10.5:
+    resolution: {integrity: sha512-4wTfbm57hWc2YMVs8681fSeldpDBt537KGC23ukQsoU6H4J1t2b970xXXEWsr+Ww4NqBNvXoiZ7+xCGlRY3HtQ==}
+    dependencies:
+      '@ui5/webcomponents-base': 1.10.5
+      '@ui5/webcomponents-icons': 1.10.5
+      '@ui5/webcomponents-localization': 1.10.5
+      '@ui5/webcomponents-theming': 1.10.5
     dev: false
 
   /@zxing/library/0.17.1:
