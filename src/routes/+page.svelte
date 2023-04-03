@@ -9,11 +9,21 @@
 	import '@ui5/webcomponents/dist/Button';
 	import '@ui5/webcomponents-icons/dist/key';
 
+	import { auth, FirebaseError, provider, signInWithRedirect } from '$lib/firebase/setup';
+
 	import { onMount } from 'svelte';
 
 	onMount(() => {
 		setTheme('sap_horizon');
 	});
+
+	async function loginRedirect(): Promise<void> {
+		try {
+			await signInWithRedirect(auth, provider);
+		} catch (error) {
+			console.error(error);
+		}
+	}
 </script>
 
 <svelte:head>
@@ -28,7 +38,9 @@
 		</ui5-bar>
 
 		<div class="flex flex-row justify-center items-stretch mt-20">
-			<ui5-button icon="key">Login mit HSE Benutzer (Single Sign On)</ui5-button>
+			<ui5-button icon="key" on:click|stopPropagation={loginRedirect} on:keydown={loginRedirect}
+				>Login mit HSE Benutzer (Single Sign On)</ui5-button
+			>
 		</div>
 	</ui5-page>
 </div>
