@@ -1,7 +1,8 @@
 <script lang="ts">
 	import './styles.css';
-	import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme';
+	
 	import '@ui5/webcomponents/dist/Assets';
+	import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme';
 	import '@ui5/webcomponents-fiori/Assets';
 	import '@ui5/webcomponents-fiori/dist/Page';
 	import '@ui5/webcomponents-fiori/dist/Bar';

@@ -15,9 +15,9 @@ export const auth = getAuth(firebaseApp);
 onIdTokenChanged(auth, async (user) => {
 	if (user) {
 		const token = await user.getIdToken();
-		localStorage.setItem('token', token);
+		//localStorage.setItem('token', token);
 	} else {
-		localStorage.removeItem('token');
+		//localStorage.removeItem('token');
 	}
 });
 
